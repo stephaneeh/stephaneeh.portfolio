@@ -37,10 +37,14 @@ h2 {
     font-size: 250%;
   }
 
+p {
+    margin: 2% 0;
+}
+
 nav ul {
     display: flex;
-    justify-content: space-between;
-    min-width: 200px;
+    justify-content: space-around;
+    min-width: 300px;
       }
   
 nav a {
@@ -54,9 +58,47 @@ nav a {
     height: 500px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/hero_1.png");
+    background-image: url("../images/hero_2.png");
     background-size: cover;
     background-position: center;
+    display: flex;
+    color: var(--black);
+}
+
+/* Content within the hero section */
+.title {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+	align-content: flex-start;
+    padding: 50px;
+    text-align: center;
+    font-size: 200%;
+}
+
+.hr-line {
+    width: 75%;
+    height: 2px;
+    background-color: var(--blue);
+    border: none;
+    margin: 20px auto;
+}
+
+.about-me {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-content {
+    background-color: var(--black);
+    color: var(--white);
+    justify-content: space-around;
 }
 
 
