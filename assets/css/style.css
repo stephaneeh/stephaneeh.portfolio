@@ -48,15 +48,18 @@ nav a {
     text-decoration: none;
   }
 
-figure {
-    height: 400px;
+/* ClassSelectors */
+/* Main image on homepage below nav */
+.hero {
+    height: 500px;
     width: 100%;
     margin-bottom: 25px;
-    /* background-image: url("../images/hero_1"); */
-    /* background-size: cover; */
+    background-image: url("../images/hero_1.png");
+    background-size: cover;
     background-position: center;
-    color: var(--black);
 }
+
+
 
 
 footer {
