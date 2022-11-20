@@ -131,19 +131,26 @@ nav a {
 }
 
 .card {
-    flex-basis: 30%;
-    margin-bottom: 2rem;
+    flex: 1 0 100%;
+    margin: .5rem;
+    margin-bottom: 1rem;
     /* card shading */
     border-style: ridge;
     border-width: .5px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px #aaaaaa;
+    transition: flex-basis 50ms linear;
 
 }
 
+.card:hover {
+    box-shadow: 5px 5px 5px 5px #aaaaaa;
+}
+
+
 /* Specific rules for items within the card */
 .card-image {
-    height: 300px;
+    height: auto;
   }
 
 img {
@@ -160,8 +167,6 @@ img {
 
 }
 
-
-
 footer {
     text-align: center;
     background-color: var(--black);
@@ -173,4 +178,24 @@ footer h3 {
     margin: 2% 0;
     font-size: 200%;
     color: var(--blue);
+  }
+
+
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 500px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .card {
+      flex: 0 0 45%;
+      max-width: 45%;
+    }
+
+  }
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+    .card {
+      flex: 0 0 30%;
+      max-width: 30%;
+    }
   }
