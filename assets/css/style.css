@@ -15,6 +15,7 @@ body {
   }
   
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,6 +61,7 @@ nav a {
   }
 
 /* ClassSelectors */
+
 /* Main image on homepage below nav */
 .hero {
     height: 500px;
@@ -190,6 +192,7 @@ footer h3 {
       max-width: 45%;
     }
 
+
   }
   
   /* media query for larger screens */
@@ -198,4 +201,6 @@ footer h3 {
       flex: 0 0 30%;
       max-width: 30%;
     }
+
+
   }
