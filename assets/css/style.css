@@ -57,7 +57,6 @@ nav ul {
   
 nav a {
     color: var(--blue);
-    text-decoration: none;
   }
 
 /* ClassSelectors */
@@ -166,7 +165,6 @@ img {
 
 .card-header {
     background-color: pink;
-
 }
 
 footer {
@@ -182,6 +180,10 @@ footer h3 {
     color: var(--blue);
   }
 
+.contact-image {
+    width: 30px;
+    margin: 0 15px;
+}
 
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
