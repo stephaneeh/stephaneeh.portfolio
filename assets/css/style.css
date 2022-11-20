@@ -35,6 +35,13 @@ h1 {
 h2 {
     margin: 2% 0;
     font-size: 250%;
+    color: var(--blue);
+  }
+
+  h2 {
+    margin: 2% 0;
+    font-size: 200%;
+    color: var(--blue);
   }
 
 p {
@@ -57,12 +64,10 @@ nav a {
 .hero {
     height: 500px;
     width: 100%;
-    margin-bottom: 25px;
     background-image: url("../images/hero_2.png");
     background-size: cover;
     background-position: center;
     display: flex;
-    color: var(--black);
 }
 
 /* Content within the hero section */
@@ -73,6 +78,7 @@ nav a {
     align-items: center;
     justify-content: center;
 	align-content: flex-start;
+    color: var(--black);
     padding: 50px;
     text-align: center;
     font-size: 200%;
@@ -86,13 +92,26 @@ nav a {
     margin: 20px auto;
 }
 
-.about-me {
-    background-color: var(--black);
-    color: var(--white);
+.content {
     padding: 0 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+#about-me {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#projects {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#contact {
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .about-content {
@@ -101,14 +120,10 @@ nav a {
     justify-content: space-around;
 }
 
-
-
-
 footer {
-    padding: 20px;
     text-align: center;
-    background: #13293d;
-    color: #fff;
-    margin-top: auto;
+    background-color: var(--black);
+    color: var(--white);
   }
+
 
