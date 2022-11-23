@@ -34,25 +34,27 @@ nav a {
 }
 
 h1 {
+  font: 200% tahoma;
   margin: 10px 5px;
-  font-size: 200%;
+  /* font-size: 200%; */
+  font-family: ;
 }
 
 h2 {
   margin: 2% 0;
-  font-size: 160%;
+  font: 160% tahoma;
   color: var(--blue);
 }
 
 h3 {
   margin: 1% 0;
-  font-size: 110%;
+  font: 110% tahoma;
   color: var(--black);
 }
 
 h4 {
-  margin: 2% 0;
-  font-size: 100%;
+  margin: 4% 0;
+  font: 100% tahoma;
   color: var(--black);
   font-weight: bolder;
 }
@@ -147,7 +149,7 @@ a {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 10px;
-  box-shadow: 5px 5px 3px #aaaaaa;
+  box-shadow: 5px 5px 5px 5px  #aaaaaa;
   transition: transform .2s; /* Animation for the hover */
 }
 
@@ -157,6 +159,7 @@ a {
 
 .project-card p {
   font-size: 75%;
+  margin: 4% 0;
 }
 
 .project-image {  
