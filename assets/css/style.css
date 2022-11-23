@@ -139,6 +139,12 @@ h4 {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 10px;
+  box-shadow: 5px 5px 3px #aaaaaa;
+  transition: transform .2s; /* Animation for the hover */
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .project-card p {
@@ -176,8 +182,8 @@ footer h3 {
 }
 
 /*MEDIA RESOLUTION*/
-/*FULL SCREEN resolution - 700 + */
-@media screen and (min-width: 750px) {
+/*FULL SCREEN resolution - 800 + */
+@media screen and (min-width: 800px) {
    /* All content within the main section */
    .content {
      padding: 0 50px;
@@ -197,9 +203,12 @@ footer h3 {
    /* Project cards - holds images and content */
    .project-card {
      width: 23%;
+     max-width: 250px;
      margin-bottom: 30px;
      display: flex;
      flex-direction: column;
+     box-shadow: 10px 10px 5px #aaaaaa;
+     transition: transform .2s; /* Animation for the hover */
    }
    
    .project-image {
