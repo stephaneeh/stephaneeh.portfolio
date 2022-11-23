@@ -10,7 +10,6 @@
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  border: 1px solid #000000; /* TODO: remove once complete */
 }
 
 header {
@@ -46,9 +45,16 @@ h2 {
 }
 
 h3 {
-  margin: 2% 0;
-  font-size: 130%;
+  margin: 1% 0;
+  font-size: 110%;
   color: var(--black);
+}
+
+h4 {
+  margin: 2% 0;
+  font-size: 100%;
+  color: var(--black);
+  font-weight: bolder;
 }
 
 .name { /* Difference of colours in logo */
@@ -60,7 +66,6 @@ h3 {
 .hero {
   height: 300px;
   width: 100%;
-  background-color: var(--white);
   background-image: url("../images/hero_2.png");
   background-size: cover;
   background-position: center;
@@ -86,14 +91,9 @@ h3 {
   margin: 20px auto;
 }
 
-/* main container - holds all content within the Figure element */
-main {
-  border: 1px solid #000000;
-}
-
+/* MAIN CONTAINER - holds all content within the Figure element */
 /* All content within the main section */
 .content {
-  border: 2px dashed #000000; /* TODO: remove once complete */
   padding: 0 50px;
   display: flex;
   flex-direction: column;
@@ -117,7 +117,7 @@ main {
   align-items: center;
 }
 
-img {
+.headshot {
   /* width: 100px; */
   max-height: 150px;
   border-radius: 10px;
@@ -125,8 +125,91 @@ img {
   transform: scaleX(-1);
   justify-content: center;
 }
-/* Project container - holds all cards - parent */
+
+/* PROJECT CONTAINER - holds all cards - parent */
 .projects-row { 
-  background-color: yellow;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
 }
 
+/* CARD CONTAINER - holds all card content - settings for resolution smaller than 400px */
+.project-card {
+  width: 100%; 
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 75%;
+}
+
+.project-image {
+  background-color: yellow;
+  min-height: 180px; /* max height of images */
+  min-width: 130px;
+  }
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+  }
+
+footer {
+  text-align: center;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+footer h3 {
+  text-align: center;
+  color: var(--white);
+}
+
+#contact {
+  padding: 5px;
+}
+.contact-image {
+  width: 30px;
+  margin: 0 15px;
+}
+
+/*MEDIA RESOLUTION*/
+/*FULL SCREEN resolution - 700 + */
+@media screen and (min-width: 750px) {
+   /* All content within the main section */
+   .content {
+     padding: 0 50px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+   }
+   
+   /* Project container - holds all cards - parent */
+   .projects-row { 
+     padding-bottom: 10px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+   }
+   /* Project cards - holds images and content */
+   .project-card {
+     width: 23%;
+     margin-bottom: 30px;
+     display: flex;
+     flex-direction: column;
+   }
+   
+   .project-image {
+     min-height: 250px; /* max height of images */
+     background-color: green;
+     margin: 0;
+   }
+   
+   .project-content {
+     margin: 0 5px; /* Space between card edge and text - indent */
+   }
+  }
