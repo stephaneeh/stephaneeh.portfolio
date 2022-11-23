@@ -10,18 +10,29 @@
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  margin: 0;
   text-align: center;
-  border: 1px solid #000000;
+  border: 1px solid #000000; /* TODO: remove once complete */
 }
 
 header {
   background-color: var(--black);
   color: var(--blue);
+  width: 100%;
   display: flex;
+  flex: 0 0 100px;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 5px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  min-width: 300px;
+}
+
+nav a {
+  color: var(--blue);
 }
 
 h1 {
@@ -41,30 +52,58 @@ h3 {
   color: var(--black);
 }
 
-.name {
+.name { /* Difference of colours in logo */
   color: var(--white);
 }
 
-nav ul {
+/* Figure Element - holds all content within the Figure element */
+/* Main image on homepage below nav */
+.hero {
+  height: 300px;
+  width: 100%;
+  background-color: var(--white);
+  background-image: url("../images/hero_2.png");
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-content: space-around;
-  min-width: 300px;
+}
+/* Main text on homepage in hero section */
+.title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-start;
+  padding: 50px;
 }
 
-nav a {
-  color: var(--blue);
+/* Horizontal line underneath the title */
+.hr-line {
+  width: 75%;
+  height: 2px;
+  background-color: var(--blue);
+  border: none;
+  margin: 20px auto;
 }
 
+/* main container - holds all content within the Figure element */
 main {
   text-align: center;
   border: 1px solid #000000;
-  margin: 30px; /* Space between project container and webpage */
+  margin: 0 30px;
+  
 }
 
+/* All content within the main section */
 .content {
-  border: 2px dashed #000000;
-  margin-bottom: 1rem;
+  border: 2px dashed #000000; /* TODO: remove once complete */
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
+
 
 /* Project container - holds all cards - parent */
 .projects-row { 
