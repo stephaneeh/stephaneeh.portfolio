@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+header {
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+main {
+  text-align: center;
+  border: 1px solid #000000;
+  margin: 30px; /* Space between project container and webpage */
+}
+
+.content {
+  border: 2px dashed #000000;
+  margin-bottom: 1rem;
+}
+
+/* Project container - holds all cards - parent */
+.projects-row { 
+  background-color: yellow;
+}
+
