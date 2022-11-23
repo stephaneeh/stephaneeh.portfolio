@@ -57,6 +57,10 @@ h4 {
   font-weight: bolder;
 }
 
+a {
+  color: var(--black);
+}
+
 .name { /* Difference of colours in logo */
   color: var(--white);
 }
@@ -131,6 +135,10 @@ h4 {
   flex-direction: column;
   justify-content: flex-start;
   text-align: start;
+}
+
+.projects-row a { 
+  font: #000000;
 }
 
 /* CARD CONTAINER - holds all card content - settings for resolution smaller than 400px */
