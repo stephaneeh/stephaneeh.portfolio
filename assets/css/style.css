@@ -163,9 +163,19 @@ a {
   margin: 4% 0;
 }
 
+#active {
+  flex-grow: 3;
+ }
+
 .project-image {  
   max-height: 150px; /* max height of images */
   max-width: 250px;
+  }
+
+  
+.project-image.placeholder {  
+  max-height: 50px; /* max height of images */
+  max-width: 100px;
   }
 
 .project-content {
@@ -223,12 +233,18 @@ footer h3 {
      transition: transform .2s; /* Animation for the hover */
    }
    
+   #active {
+    flex-grow: 2;
+   }
+
    .project-image {
      max-height: 350px; /* max height of images */
      max-width: 250px;
      background-color: green;
      margin: 0;
    }
+
+
    
    .project-content {
      margin: 0 5px; /* Space between card edge and text - indent */
