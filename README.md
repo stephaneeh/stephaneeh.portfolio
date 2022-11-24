@@ -11,7 +11,7 @@ Welcome to my portfolio. I am currently a student studying Full Stack web develo
 
 ## Application
 
-Link to application can be found [https://stephaneeh.github.io/week-1-horiseon-challenge](https://stephaneeh.github.io/stephaneeh.portfolio/)
+Link to application can be found https://stephaneeh.github.io/stephaneeh.portfolio/
 
 ## Screenshot of application
 

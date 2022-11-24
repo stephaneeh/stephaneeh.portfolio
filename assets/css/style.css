@@ -164,7 +164,7 @@ a {
 }
 
 #active {
-  flex-grow: 3;
+  flex-grow: 0 3 350px;
  }
 
 .project-image {  
