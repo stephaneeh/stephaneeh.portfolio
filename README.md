@@ -15,7 +15,7 @@ Link to application can be found [https://stephaneeh.github.io/week-1-horiseon-c
 
 ## Screenshot of application
 
-![Screenshot_20221124_105226](https://user-images.githubusercontent.com/28996399/203670774-e8cf9226-a4b5-4392-ae4c-2977cecf8c1d.png)
+![Screenshot_20221124_105226](https://user-images.githubusercontent.com/28996399/203743280-d7d35258-c413-4e6d-9909-07664779fe33.png)
 
 ## License
 [MIT](LICENSE)
