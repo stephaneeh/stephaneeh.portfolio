@@ -15,7 +15,7 @@ Link to application can be found https://stephaneeh.github.io/stephaneeh.portfol
 
 ## Screenshot of application
 
-![Screenshot_20221124_105226](https://user-images.githubusercontent.com/28996399/203670774-e8cf9226-a4b5-4392-ae4c-2977cecf8c1d.png)
+![Screenshot_20221124_071023](https://user-images.githubusercontent.com/28996399/203743516-e26dd5e0-7cfa-4c2a-9fbb-b8e145d7a1b8.png)
 
 ## License
 [MIT](LICENSE)
