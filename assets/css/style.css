@@ -137,6 +137,7 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   text-align: start;
+  margin-bottom: 20px;
 }
 
 .projects-row a { 
